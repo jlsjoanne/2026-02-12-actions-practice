@@ -15,6 +15,7 @@ jobs:
 
     task_2:
         runs-on: ubuntu-latest
+        needs: task_1
         steps:
             - name: 下載repo
               uses: actions/checkout@v6
