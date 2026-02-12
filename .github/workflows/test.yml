@@ -10,8 +10,7 @@ jobs:
         steps:
             - name: 檢查當前路徑
               run: echo "$pwd"
-
-            -name: 檢查Node.js版本
+            - name: 檢查Node.js版本
               run: node -v
 
     task_2:
