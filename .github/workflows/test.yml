@@ -20,4 +20,11 @@ jobs:
               uses: actions/checkout@v6
 
             - name: 顯示所有檔案
-              uses: ls -al
+              run: ls -al
+
+            - name: 設定 Node.js環境
+              uses: actions/setup-node@v6
+              with:
+                node-version: 24
+            - name: 檢查Node.js版本
+              run: node -v
